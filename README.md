@@ -58,7 +58,7 @@ python trade_doc_gen.py match --requirements "I need to export coffee beans to G
 
 ## Example: Contract Risk Scan Output
 
-```
+```text
 # Contract Risk Scan Report
 Scan Time: 2026-07-29 16:30
 Document Length: 1250 characters
@@ -85,6 +85,13 @@ Unlike generic document generators, `trade-doc-generator` contains **real produc
 
 - [224-ai-employees](https://github.com/GlobalAI-Media/224-ai-employees) — Meet the full AI team
 - [gaigroupai.com](https://gaigroupai.com) — Deploy your own AI employees today
+
+## 📡 Connect With Us
+
+- 🌐 Website: [gaigroupai.com](https://gaigroupai.com)
+- 📝 Dev.to: [Read the full story](https://dev.to/xl_wong_2b1270c0041e37183/how-224-ai-employees-power-a-fully-automated-global-trade-os-and-how-you-can-try-it-free-2aoc)
+- 📺 YouTube: [@gaigroupai](https://www.youtube.com/@gaigroupai)
+- ✈️ Telegram: [@GlobalAIMedia](https://t.me/GlobalAIMedia)
 
 ## License
 
