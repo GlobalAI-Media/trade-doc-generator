@@ -1,3 +1,4 @@
+```markdown
 # 📄 trade-doc-generator
 
 A professional AI-powered CLI toolkit for international trade: **generate invoices, scan contract risks, and match trade contracts**.
@@ -18,36 +19,46 @@ A professional AI-powered CLI toolkit for international trade: **generate invoic
 git clone https://github.com/GlobalAI-Media/trade-doc-generator.git
 cd trade-doc-generator
 pip install -r requirements.txt
+```
 
 ## Prerequisites
 
-Set your DEEPSEEK_API_KEY environment variable. Get a key at platform.deepseek.com.
+Set your `DEEPSEEK_API_KEY` environment variable. Get a key at [platform.deepseek.com](https://platform.deepseek.com).
 
+```bash
 export DEEPSEEK_API_KEY="sk-your-key-here"  # macOS/Linux
 set DEEPSEEK_API_KEY=sk-your-key-here       # Windows
+```
 
 ## Usage
 
-1. Generate a Document
+### 1. Generate a Document
 
+```bash
 python trade_doc_gen.py generate --type invoice
 python trade_doc_gen.py generate --type packinglist --details "seller='MyCompany' buyer='Client Inc'"
 python trade_doc_gen.py generate --type certificate --output my_cert.md
+```
 
-2. Scan a Contract for Risks
+### 2. Scan a Contract for Risks
 
+```bash
 # Scan a file
 python trade_doc_gen.py scan --file contract.txt
 
 # Scan text directly
 python trade_doc_gen.py scan --text "The agreement states unlimited liability and perpetual confidentiality."
+```
 
-3. Match a Contract Template
+### 3. Match a Contract Template
 
+```bash
 python trade_doc_gen.py match --requirements "I need to export coffee beans to Germany, FOB terms, long-term supply."
+```
 
 ## Example: Contract Risk Scan Output
 
+```
 # Contract Risk Scan Report
 Scan Time: 2026-07-29 16:30
 Document Length: 1250 characters
@@ -59,32 +70,23 @@ Document Length: 1250 characters
 ---
 Overall Risk Score: 29
 > ⚠️ Verdict: MEDIUM RISK. Review and amend flagged clauses.
+```
 
 ## Why This Tool is Unique
 
-Unlike generic document generators, trade-doc-generator contains real production code from the Global AI Media Group's AI employee system:
+Unlike generic document generators, `trade-doc-generator` contains **real production code** from the Global AI Media Group's AI employee system:
 
-The scan command uses the same risk-scoring engine that powers our contract_risk_scanner AI employee.
+- The `scan` command uses the same risk-scoring engine that powers our `contract_risk_scanner` AI employee.
+- The `generate` and `match` commands are guided by the exact prompt engineering used by our `invoice_auditor` and `contract_specialist` AI roles.
 
-The generate and match commands are guided by the exact prompt engineering used by our invoice_auditor and contract_specialist AI roles.
-
-This is not a demo. It's a window into a 224-strong AI workforce.
+**This is not a demo. It's a window into a 224-strong AI workforce.**
 
 ## Related
 
-224-ai-employees — Meet the full AI team
-
-gaigroupai.com — Deploy your own AI employees today
+- [224-ai-employees](https://github.com/GlobalAI-Media/224-ai-employees) — Meet the full AI team
+- [gaigroupai.com](https://gaigroupai.com) — Deploy your own AI employees today
 
 ## License
 
 MIT © 2026 CHIFENG JINGWEI INTELLIGENT MEDIA TECHNOLOGY CO., LTD
-
-
----
-
-### 第三步：同步更新主仓库
-创建完成后，请修改 `224-ai-employees` 仓库的 `README.md`，将 `trade-doc-generator (coming soon)` 改为：
-
-```markdown
-| [**trade-doc-generator**](https://github.com/GlobalAI-Media/trade-doc-generator) | AI-powered trade document toolkit: generate invoices, scan contracts, match templates. |
+```
